@@ -45,18 +45,28 @@ public class Main extends PApplet {
      */
     public void drawRectangles() {
         // Choose a color with fill
-         fill(20.0f, 100, 100);
-        // Draw a rectangle
+        //Draw a rectangle
+        fill(20.0f, 100, 100);
         rect(0, 0, width, height);
+
+        fill(200, 100, 100);
+        rect(20, 20, width-40, height-40);
 
         fill(200, 85, 85);
         rect(40,40,width-80,height-80);
+
     }
 
     /**
      * Draw a few ellipses, each with different colors at different parts of the screen.
      */
     public void drawEllipses() {
+        fill(100, 100, 100);
+        ellipse(width/2,height/2, 100, 100);
+        fill(160, 100, 100);
+        ellipse(width/2,height/2, 90, 90);
+        fill(200, 100, 100);
+        ellipse(width/2,height/2, 80, 80);
 
     }
 
